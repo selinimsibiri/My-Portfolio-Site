@@ -1,0 +1,162 @@
+
+
+.hero {
+    height: 100%;
+    width: 100%;
+    min-height: 97.5vh;
+    background: url("/assets/images/f.jpg") repeat;
+    background-size: 20% auto;
+    background-repeat: repeat;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.celibon {
+  border: none;
+  border-color: #ffffff00;
+}
+
+.A {
+    left: 97.5%;
+    top: 0.1rem;
+    position: fixed;
+    font-size: 200%;
+    animation: rotate 0.1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
+    color: #9f3863;
+    
+    animation-iteration-count: infinite; /* Sonsuz tekrar */
+    animation-fill-mode: both infinite;
+  }
+  
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.container h1 {
+    padding:1.3rem 0rem 1.3rem 0rem;
+    border-radius: 3rem;
+    color: #fff;
+    min-width: 101.8%;
+    font-size: 300%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 8rem 0rem 8rem;
+    
+}
+
+
+
+ul {
+    list-style-type: none;
+    z-index: 2;
+    margin-left: 6%;
+    margin-top: 10rem;
+  }
+  
+  li {
+    float: left;
+    list-style: none;
+    margin: .5rem;
+    
+  }
+  
+  li a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 525px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  
+    border-radius: 3px;
+    min-width: 29%;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    transition: transform 1.4s;
+    transform-style: preserve-3d;
+  }
+  
+   img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #404040;
+    object-fit: cover;
+    
+  }
+  
+  .back-name{
+    color: #ffffff;
+    z-index: -1; 
+    font-style: bold;
+    font-weight: 700;
+    font-size: 170%;
+    
+    position: absolute;
+
+    text-shadow: -3px 4px #ffffff29, 0 0 5px rgba(66, 66, 66, 0.1);
+  }
+  
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    overflow: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    perspective: 1000px;
+  }
+  
+
+svg {
+    position: fixed; /* make sure it stays put so we can see it! */
+  
+    animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+}
+

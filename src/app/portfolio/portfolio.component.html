@@ -1,0 +1,68 @@
+<app-headerb></app-headerb>
+
+<section class="hero">
+    <div class="animated-background" #scrollContainer>
+        <div class="A" (window:scroll)="onScroll($event)" [ngStyle]="{'--scroll': scrollValue}">
+            ♡
+        </div>
+        <ul  *ngFor="let i of ii">
+            <li class="list">
+                <a>
+                    <div class="flip-card" >
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front" >
+                            <div class="celibon">
+                                <img src="../assets/images/portfolio/{{i}}.png" alt="">
+                            </div>
+                          </div>
+                          <div class="flip-card-back" >
+                            <div class="back-name">
+                                <img src="../assets/images/portfolio2/{{i}}.png" alt="">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- <div class="gallery row">
+    <div class="col">
+        <img src="assets/image.png" alt="image">a
+        <img src="assets/image.png" alt="image">a
+        <img src="assets/image.png" alt="image">a
+        <img src="assets/image.png" alt="image">a
+        <img src="assets/image.png" alt="image">a
+        <div *ngFor="let image of row1">
+            <img src="{{ image }}" alt="">
+        </div> 
+     </div>
+    <div class="col">
+        <img src="assets/image.png" alt="image">b
+        <img src="assets/image.png" alt="image">b
+        <img src="assets/image.png" alt="image">b
+        <img src="assets/image.png" alt="image">b
+        <img src="assets/image.png" alt="image">b 
+        <div *ngFor="let image of row2">
+            <img src="{{ image }}" alt="">
+        </div> 
+     </div>
+    <div class="col">
+        <img src="assets/image.png" alt="image">c
+        <img src="assets/image.png" alt="image">c
+        <img src="assets/image.png" alt="image">c
+        <img src="assets/image.png" alt="image">c
+        <img src="assets/image.png" alt="image">c -->
+        <!-- <div *ngFor="let image of row3">
+            <img src="{{ image }}" alt="">
+        </div> 
+     </div>
+</div> -->

@@ -1,0 +1,25 @@
+
+.deneme {
+    height: 100%;
+    width: 100%;
+    min-height: 97.5vh;
+    background: url("/assets/boo.jpg");
+    background-size: cover;
+    display: grid;
+}
+
+
+
+.naberstalker {
+    color: white;
+    font-family: "Poppins", sans-serif;
+
+    font-size: 120%;
+    margin-top: 9rem;  
+}
+
+p {
+    margin-bottom: 3rem;
+    max-width: 50%;  
+    margin-left: 25%;
+}
